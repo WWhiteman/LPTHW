@@ -12,14 +12,14 @@ def first_room():
 	next = raw_input()
 
 	if "tickle" in next:
-		dead("The dragon ROFL's then stomps you into a puddle of flesh.")
+		dead("\aThe dragon ROFL's then stomps you into a puddle of flesh.")
 	elif "fuck" in next:
 		print "The dragon looks shocked and quickly steps out of the way."
 		second_room()
 	elif "wait" in next:
-		dead("You wait until you die.")
+		dead("\aYou wait until you die.")
 	else:
-		print "Do something smart."
+		print "\aDo something smart."
 		first_room()
 
 
@@ -39,11 +39,11 @@ def second_room():
 		print "Nothing happens and you gain your freedom, you win!"
 		exit(0)
 	elif "edge" in next:
-		dead("A blade comes out of the wall and cuts off your head")
+		dead("\aA blade comes out of the wall and cuts off your head")
 	elif "sprint" in next:
-		dead("The force of your feet cause a trapdoor to open, you die.")
+		dead("\aThe force of your feet cause a trapdoor to open, you die.")
 	else:
-		print "That doesn't make sense."
+		print "\aThat doesn't make sense."
 		first_room()
 
 
